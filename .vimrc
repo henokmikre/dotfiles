@@ -94,6 +94,9 @@ set t_vb=
 set splitbelow
 set splitright
 
+" Turn off search highlights
+set nohlsearch
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Paste
 " :help paste recommends F10 and F11, but this is hard on Mac keyboard.
