@@ -139,13 +139,11 @@ function SetPythonOptions()
   setlocal sts=2
 endfunction
 
-" Text files
-augroup txt
-  autocmd BufRead,BufNewFile *.txt set filetype=conf
-augroup END
-
 " Markdown (override modula2)
 autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+
+" Text files (assume they're markdown)
+autocmd BufNewFile,BufFilePre,BufRead *.txt set filetype=markdown
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove unwanted spaces
